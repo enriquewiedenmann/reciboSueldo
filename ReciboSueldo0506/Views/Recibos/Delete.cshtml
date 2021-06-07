@@ -1,0 +1,58 @@
+﻿@model ReciboSueldo0506.Models.Recibo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <div>
+        <h4>Recibo</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Empleado
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Empleado.Apellido)    @Html.DisplayFor(model => model.Empleado.Nombre)  @Html.DisplayFor(model => model.Empleado.Cuil)
+            </dd>
+
+            <dt>
+                Lote
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Lote.Anio)  @Html.DisplayFor(model => model.Lote.Mes)  @Html.DisplayFor(model => model.Lote.Concepto)
+
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Archivo)
+            </dt>
+
+            <dd>
+                <div>
+
+                    <iframe id="ReciboView"
+                            title="Recibo"
+                            width="700"
+                            height="400"
+                            src="@ViewData["urlFile"].ToString()"></iframe>
+                </div>
+            </dd>
+
+        </dl>
+    </div>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

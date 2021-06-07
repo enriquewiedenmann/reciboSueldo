@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Recibo de Sueldos</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="icon"
+          href="data:image/png;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAABMLAAATCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACebABgtY0v3+7hpt/u4aZgAAAAAAAAAAAAAAAAAAAAAO7hpmDj0Xffx6gA38eoAGAAAAAAAAAAAJ5sAECebAC/nmwA/7KJKv/u4ab/7uGm/+7hpr/u4aZA7uGmQO7hpr/u4ab/5NN9/8eoAP/HqAD/x6gAv8eoAEC6lQD/o3QA/55sAP+yiSr/7uGm/+7hpv/u4ab/5NN9/9a9Pv/p2pH/7uGm/+TTff/HqAD/x6gA/8eoAP+9mQD/x6gA/8eoAP+zigD/tY0q/+7hpv/p2pH/0bYq/8eoAP/HqAD/x6gA/9vFU//iz3L/x6gA/8KhAP+oewD/nmwA/8eoAP/HqAD/x6gA/8yvFf+4jz7/x6gA/8eoAP/HqAD/x6gA/8eoAP/HqAD/x6gA/5pjAP+ebAD/nmwA/55sAP/HqAD/x6gA/8eoAP/HqAD/dywA/4E8AP+ziQD/x6gA/8eoAP/HqAD/x6gA/8eoAP93LAD/fDQA/5RcAP+ebAD/x6gA/8eoAP/HqAD/x6gA/3csAP93LAD/dywA/4tLAP/HqAD/x6gA/8eoAP/HqAD/dywA/3csAP93LAD/gTwA/8eoAEDHqAC/x6gA/8eoAP93LAD/dywA/3csAL93LABAx6gAQMeoAL/HqAD/x6gA/3csAP93LAD/dywAv3csAEAAAAAAAAAAAMeoAGDHqADfdywA33csAGAAAAAAAAAAAAAAAAAAAAAAx6gAYMeoAN93LADfdywAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///MzP//mZn//2Zm//9mZsPDMzMAAAAAAAAAAAAA//8AAMzMAADMzAAAmZkAAGZmw8NmZv//MzP//wAA//8AAA=="
+          type="image/gif" sizes="16x16" />
+    <!--  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">-->
+    <!-- Bootstrap core CSS -->
+    <!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">-->
+    <!--link href="/bootstrap/js/bootstrap.min.js"-->
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        tr {
+            cursor: pointer;
+        }
+
+        .featureoff {
+            display: none;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+    <!-- Custom styles for this template
+    <link href="dashboard.css" rel="stylesheet">-->
+
+</head>
+<body>
+    <!--nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow"-->
+    <div style="background:#dddddd" class="navbar navbar-inverse navbar-fixed-top">
+        <div>
+
+            <div class="navbar-header">
+
+                <img style='display: inline-block; width: 200px; height: 47px;'
+                     id='base64image'
+                     src='../../imagenes/logoMarsh.png' />
+
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>-->
+
+
+            </div>
+            <div>
+                <!--/div><class="navbar-collapse collapse">-->
+                <div class="row">
+                    <!--prueba-->
+                    <div id="general" class="pull-right dropdown col-md-1 col-md-offset-1" style="line-height: 47px;">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img style='display: inline-block; width: 40px; height: 40px;'
+                                 id='base64image'
+                                 src='../../imagenes/opciones.jpg' />
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+
+                            <div><button type="button" class="btn btn-link"> @Html.ActionLink("Lotes", "Index", "Lotes")</button></div>
+                            <div><button type="button" class="btn btn-link"> @Html.ActionLink("Recibos", "Index", "Recibos")</button></div>
+                            <div><button type="button" class="btn btn-link"> @Html.ActionLink("Empleados", "Index", "Empleados")</button></div>
+                            <div><button type="button" class="btn btn-link"> @Html.ActionLink("Estado Empleados", "Index", "EstadoEmpleados")</button></div>
+                            <div><button type="button" class="btn btn-link"> @Html.ActionLink("Usuarios", "Index", "Usuarios")</button></div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <!--fin prueba-->
+
+
+               
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <!-- DATA TABLE SCRIPTS     -->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>

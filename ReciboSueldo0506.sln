@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReciboSueldo0506", "ReciboSueldo0506\ReciboSueldo0506.csproj", "{A76F516D-2317-4624-AA90-13581CC7C1ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUnitaria", "PruebaUnitaria\PruebaUnitaria.csproj", "{5B4855B8-C507-4605-9FCD-73F3E45BC158}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A76F516D-2317-4624-AA90-13581CC7C1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76F516D-2317-4624-AA90-13581CC7C1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76F516D-2317-4624-AA90-13581CC7C1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76F516D-2317-4624-AA90-13581CC7C1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4855B8-C507-4605-9FCD-73F3E45BC158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4855B8-C507-4605-9FCD-73F3E45BC158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4855B8-C507-4605-9FCD-73F3E45BC158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4855B8-C507-4605-9FCD-73F3E45BC158}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23135FDE-C42A-4AF4-9DF7-6A5BD23F0901}
+	EndGlobalSection
+EndGlobal

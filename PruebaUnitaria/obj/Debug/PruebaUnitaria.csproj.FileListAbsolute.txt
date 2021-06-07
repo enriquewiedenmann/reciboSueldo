@@ -1,0 +1,16 @@
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\obj\Debug\PruebaUnitaria.csprojResolveAssemblyReference.cache
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\obj\Debug\PruebaUnitaria.csproj.CoreCompileInputs.cache
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\PruebaUnitaria.exe.config
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\PruebaUnitaria.exe
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\PruebaUnitaria.pdb
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\obj\Debug\PruebaUnitaria.exe
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\obj\Debug\PruebaUnitaria.pdb
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\Twilio.dll
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\Newtonsoft.Json.xml
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\wiedene\source\repos\ReciboSueldo0506\PruebaUnitaria\bin\Debug\Twilio.xml

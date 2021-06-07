@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Recibo de Sueldos</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="icon"
+          href="data:image/png;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAABMLAAATCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACebABgtY0v3+7hpt/u4aZgAAAAAAAAAAAAAAAAAAAAAO7hpmDj0Xffx6gA38eoAGAAAAAAAAAAAJ5sAECebAC/nmwA/7KJKv/u4ab/7uGm/+7hpr/u4aZA7uGmQO7hpr/u4ab/5NN9/8eoAP/HqAD/x6gAv8eoAEC6lQD/o3QA/55sAP+yiSr/7uGm/+7hpv/u4ab/5NN9/9a9Pv/p2pH/7uGm/+TTff/HqAD/x6gA/8eoAP+9mQD/x6gA/8eoAP+zigD/tY0q/+7hpv/p2pH/0bYq/8eoAP/HqAD/x6gA/9vFU//iz3L/x6gA/8KhAP+oewD/nmwA/8eoAP/HqAD/x6gA/8yvFf+4jz7/x6gA/8eoAP/HqAD/x6gA/8eoAP/HqAD/x6gA/5pjAP+ebAD/nmwA/55sAP/HqAD/x6gA/8eoAP/HqAD/dywA/4E8AP+ziQD/x6gA/8eoAP/HqAD/x6gA/8eoAP93LAD/fDQA/5RcAP+ebAD/x6gA/8eoAP/HqAD/x6gA/3csAP93LAD/dywA/4tLAP/HqAD/x6gA/8eoAP/HqAD/dywA/3csAP93LAD/gTwA/8eoAEDHqAC/x6gA/8eoAP93LAD/dywA/3csAL93LABAx6gAQMeoAL/HqAD/x6gA/3csAP93LAD/dywAv3csAEAAAAAAAAAAAMeoAGDHqADfdywA33csAGAAAAAAAAAAAAAAAAAAAAAAx6gAYMeoAN93LADfdywAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///MzP//mZn//2Zm//9mZsPDMzMAAAAAAAAAAAAA//8AAMzMAADMzAAAmZkAAGZmw8NmZv//MzP//wAA//8AAA=="
+          type="image/gif" sizes="16x16" />
+    <!--  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">-->
+    <!-- Bootstrap core CSS -->
+    <!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">-->
+    <!--link href="/bootstrap/js/bootstrap.min.js"-->
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        tr {
+            cursor: pointer;
+        }
+
+        .featureoff {
+            display: none;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+    <!-- Custom styles for this template
+    <link href="dashboard.css" rel="stylesheet">-->
+
+</head>
+<body>
+    @using (Html.BeginForm("SignIn", "Login", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        <main class="form-signin">
+            <form>
+                <img class="mb-4" src="../../imagenes/logoMarsh.png" alt="" width="400" height="57">
+                <h1 class="h3 mb-3 fw-normal">Por favor Loguearse</h1>
+
+                <div class="form-floating">
+                    <input type="text" class="form-control" name="userName" id="userName"  >
+                    <label for="userName">Usuario</label>
+                </div>
+                <div class="form-floating">
+                    <button id="SendPass" value="SendPass" class="btn btn-default" type="button">Send Password</button>
+                    <br />
+                </div>
+                    <div class="form-floating">
+
+                        <input type="password" class="form-control" name="Password" id="Password" placeholder="Password">
+                        <label for="Password">Password</label>
+                    </div>
+
+
+                    <input type="submit" value="Sign In" class="btn btn-default" />
+
+            </form>
+        </main>
+    }
+   
+        <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/propios/Login/jquery-login.js")" type="text/javascript"></script>
+
+   
+
+
+
+
+
+
+</body>
+</html>

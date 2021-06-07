@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ReciboSueldo0506.Models.Recibo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleado.Apellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleado.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleado.Cuil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lote.Anio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lote.Mes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lote.Concepto)
+        </th>
+      
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empleado.Apellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empleado.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empleado.Cuil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lote.Anio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lote.Mes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lote.Concepto)
+        </td>
+       
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.IdRecibo }) |
+            @Html.ActionLink("Details", "Details", new { id = item.IdRecibo }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.IdRecibo })
+        </td>
+    </tr>
+}
+
+</table>

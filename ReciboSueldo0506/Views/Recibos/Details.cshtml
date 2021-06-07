@@ -1,0 +1,50 @@
+﻿@model ReciboSueldo0506.Models.Recibo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Recibo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Empleado
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empleado.Apellido)    @Html.DisplayFor(model => model.Empleado.Nombre)  @Html.DisplayFor(model => model.Empleado.Cuil)
+        </dd>
+
+        <dt>
+            Lote
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lote.Anio)  @Html.DisplayFor(model => model.Lote.Mes)  @Html.DisplayFor(model => model.Lote.Concepto)
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Archivo)
+        </dt>
+
+        <dd>
+            <div>
+
+                <iframe id="ReciboView"
+                        title="Recibo"
+                        width="700"
+                        height="400"
+                        src="@ViewData["urlFile"].ToString()"></iframe>
+            </div>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdRecibo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
